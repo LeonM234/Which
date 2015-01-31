@@ -29,6 +29,7 @@
         controller: 'newWhichController',
         controllerAs: 'newWhich'
       })
+      .otherwise({redirectTo: '/'});
     })
 
 }());
