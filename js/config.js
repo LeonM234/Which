@@ -16,6 +16,7 @@
         controllerAs: 'login',
         private: true
       })
+<<<<<<< HEAD
       .when('/profile', {
         templateUrl: 'views/_my_whiches',
         controller: 'profileController',
@@ -27,6 +28,17 @@
         controller: 'aboutController',
         controllerAs: 'about',
         private: true
+=======
+      .when('/dashboard', {
+        templateUrl: 'views/_dashboard',
+        controller: 'dashboardController',
+        controllerAs: 'dashboard'
+      })
+      .when('/about', {
+        templateUrl: 'views/_about',
+        controller: 'aboutController'.
+        controllerAs: 'about'
+>>>>>>> be616d4256e78e4883229bcea07899f5e54bb434
       })
       .when('/newwhich', {
         templateUrl: 'views/_new_which',
