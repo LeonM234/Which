@@ -4,6 +4,7 @@
   angular.module('whichApp')
     .controller('AuthController', function($scope, $location, authFactory){
       var vm = this;
+
       vm.ref = new Firebase(FIREBASE_URL);
       vm.ref.authWithOAuthPopup("facebook", function(error, authData) {
         if(error){
@@ -11,6 +12,9 @@
         } else {
           console.log("authenticated successfully with payload: ", authData);
         }
+      }, {
+        scope: 'email'
       });
+
     })
 }());

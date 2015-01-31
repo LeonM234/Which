@@ -7,27 +7,32 @@
       .when('/', {
         templateUrl: 'views/_which_feed',
         controller: 'feedController',
-        controllerAs: 'myFeed'
+        controllerAs: 'myFeed',
+        private: true
       })
       .when('/login', {
         templateUrl: 'views/_login',
         controller: 'loginController',
-        controllerAs: 'login'
+        controllerAs: 'login',
+        private: true
       })
       .when('/profile', {
         templateUrl: 'views/_my_whiches',
         controller: 'profileController',
-        controllerAs: 'profile'
+        controllerAs: 'profile',
+        private: true
       })
       .when('/about', {
         templateUrl: 'views/_about',
-        controller: 'aboutController'.
-        controllerAs: 'about'
+        controller: 'aboutController',
+        controllerAs: 'about',
+        private: true
       })
       .when('/newwhich', {
         templateUrl: 'views/_new_which',
         controller: 'newWhichController',
-        controllerAs: 'newWhich'
+        controllerAs: 'newWhich',
+        private: true
       })
       .otherwise({redirectTo: '/'});
     })
