@@ -6,27 +6,27 @@
       $routeProvider
       .when('/', {
         templateUrl: '../views/_which_feed.html',
-        controller: 'feedController',
+        controller: 'FeedController',
         controllerAs: 'myFeed'
       })
       .when('/login', {
         templateUrl: '../views/_login.html',
-        controller: 'loginController',
+        controller: 'LoginController',
         controllerAs: 'login'
       })
       .when('/dashboard', {
         templateUrl: '../views/_dashboard.html',
-        controller: 'dashboardController',
+        controller: 'DashboardController',
         controllerAs: 'dashboard'
       })
       .when('/about', {
         templateUrl: '../views/_about.html',
-        controller: 'aboutController',
+        controller: 'AboutController',
         controllerAs: 'about'
       })
       .when('/newwhich', {
         templateUrl: '../views/_new_which.html',
-        controller: 'newWhichController',
+        controller: 'NewWhichController',
         controllerAs: 'newWhich'
       })
       .otherwise({redirectTo: '/'});
