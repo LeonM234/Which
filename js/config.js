@@ -5,28 +5,28 @@
     .config(function($routeProvider){
       $routeProvider
       .when('/', {
-        templateUrl: 'views/which_feed',
-        controller: 'feedController',
+        templateUrl: '../views/_which_feed.html',
+        controller: 'FeedController',
         controllerAs: 'myFeed'
       })
       .when('/login', {
-        templateUrl: 'views/login',
-        controller: 'loginController',
+        templateUrl: '../views/_login.html',
+        controller: 'LoginController',
         controllerAs: 'login'
       })
-      .when('/profile', {
-        templateUrl: 'views/my_whiches',
-        controller: 'profileController',
-        controllerAs: 'profile'
+      .when('/dashboard', {
+        templateUrl: '../views/_dashboard.html',
+        controller: 'DashboardController',
+        controllerAs: 'dashboard'
       })
       .when('/about', {
-        templateUrl: 'views/about',
-        controller: 'aboutController'.
+        templateUrl: '../views/_about.html',
+        controller: 'AboutController',
         controllerAs: 'about'
       })
       .when('/newwhich', {
-        templateUrl: 'views/new_which',
-        controller: 'newWhichController',
+        templateUrl: '../views/_new_which.html',
+        controller: 'NewWhichController',
         controllerAs: 'newWhich'
       })
       .otherwise({redirectTo: '/'});
