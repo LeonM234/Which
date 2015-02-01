@@ -2,6 +2,6 @@
   "use strict";
 
   angular.module('whichApp')
-    .constant('FirebaseURL', 'https://which.firebaseio.com/')
+    .constant('FIREBASE_URL', 'https://which.firebaseio.com/')
 
 }());
