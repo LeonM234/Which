@@ -3,7 +3,7 @@
 
     angular.module('whichApp')
 
-      .controller('feedController', function(){
+      .controller('FeedController', function(){
 
       })
 

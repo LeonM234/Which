@@ -3,7 +3,7 @@
 
     angular.module('whichApp')
 
-      .controller('newWhichController', function(){
+      .controller('NewWhichController', function(){
 
       })
 

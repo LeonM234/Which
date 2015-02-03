@@ -3,7 +3,7 @@
 
     angular.module('whichApp')
 
-      .controller('dashboardController', function(){
+      .controller('DashboardController', function(){
 
       })
 

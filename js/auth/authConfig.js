@@ -21,5 +21,6 @@
           authFactory.requireLogin();
         }
       })
-    }}
-}());
+    }
+
+})();

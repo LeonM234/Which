@@ -3,7 +3,7 @@
 
     angular.module('whichApp')
 
-      .controller('aboutController', function(){
+      .controller('AboutController', function(){
 
       })
 

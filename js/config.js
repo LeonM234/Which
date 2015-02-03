@@ -9,11 +9,6 @@
         controller: 'FeedController',
         controllerAs: 'myFeed'
       })
-      .when('/login', {
-        templateUrl: '../views/_login.html',
-        controller: 'LoginController',
-        controllerAs: 'login'
-      })
       .when('/dashboard', {
         templateUrl: '../views/_dashboard.html',
         controller: 'DashboardController',
