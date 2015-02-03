@@ -5,7 +5,7 @@
     .config(function($routeProvider){
       $routeProvider
       .when('/login', {
-      templateUrl: 'views/login.html',
+      templateUrl: 'views/_login.html',
         controller: 'LoginController',
         controllerAs: 'login',
         resolve: {
@@ -21,6 +21,6 @@
           authFactory.requireLogin();
         }
       })
-    }
+    })
 
 })();

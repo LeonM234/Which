@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('whichApp')
-   .controller('LoginController', function($scope, $location, authFactory){
+   .controller('LoginController', function($scope, $location, FIREBASE_URL, authFactory){
       var vm = this;
 
       vm.ref = new Firebase(FIREBASE_URL);
