@@ -13,6 +13,7 @@
         } else {
           console.log("authenticated successfully with payload: ", authData);
           $rootScope.user = authData.uid;
+          $rootScope.userPhoto = authData.facebook.cachedUserProfile.picture.data.url;
           $location.path('/dashboard');
           $scope.$apply();
         }
