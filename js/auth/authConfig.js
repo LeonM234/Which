@@ -5,7 +5,7 @@
     .config(function($routeProvider){
       $routeProvider
       .when('/login', {
-      templateUrl: 'views/login.html',
+      templateUrl: 'views/_login.html',
         controller: 'LoginController',
         controllerAs: 'login',
         resolve: {
@@ -14,6 +14,10 @@
           }
         }
       })
+      .when('/logout', {
+        template: '',
+        controller: 'logoutController'
+      })
     })
     .run(function($rootScope, authFactory){
       $rootScope.$on('$routeChangeStart', function(event, nextRoute, priorRoute){
@@ -21,6 +25,6 @@
           authFactory.requireLogin();
         }
       })
-    }
+    });
 
 })();
