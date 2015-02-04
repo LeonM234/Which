@@ -12,6 +12,7 @@
           //let's put some alerts here
         } else {
           console.log("authenticated successfully with payload: ", authData);
+          $rootScope.user = authData.uid;
           $location.path('/dashboard');
           $scope.$apply();
         }

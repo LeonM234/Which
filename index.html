@@ -20,11 +20,11 @@
          </button>
          <div class="collapse navbar-collapse navHeaderCollapse">
            <ul class="nav navbar-nav navbar-right">
-             <li><a href="/#/login">LOGIN</a></li>
+             <li ng-hide="user"><a href="/#/login">LOGIN</a></li>
              <li><a href="/#/dashboard">DASHBOARD</a></li>
              <li><a href="/#/newwhich">NEW WHICH</a></li>
              <li><a href="/#/">FEED</a></li>
-             <li><a href="/#/logout">LOGOUT</a></li>
+             <li ng-show="user"><a href="/#/logout">LOGOUT</a></li>
            </ul>
          </div>
        </div>
